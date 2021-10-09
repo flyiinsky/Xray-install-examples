@@ -162,10 +162,22 @@ bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release
       "settings": {
         "domainStrategy": "UseIPv6"
       }
+    },
+    {
+      "tag": "direct",
+      "protocol": "freedom",
+      "settings": {}
     }
   ],
   "routing": {
     "rules": [
+      {
+        "type": "field",
+        "outboundTag": "direct",
+        "domain": [
+          "full:dns.google"  
+        ]
+      },
       {
         "type": "field",
         "outboundTag": "IP6_out",
