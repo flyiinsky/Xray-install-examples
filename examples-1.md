@@ -431,6 +431,9 @@ apt install curl lsb-release -y
 
 ```
 echo "deb http://deb.debian.org/debian $(lsb_release -sc)-backports main" | tee /etc/apt/sources.list.d/backports.list
+```
+
+```
 apt update
 ```
 
@@ -452,7 +455,7 @@ apt install wireguard-tools --no-install-recommends
 apt -t $(lsb_release -sc)-backports install linux-image-$(dpkg --print-architecture) linux-headers-$(dpkg --print-architecture) --install-recommends -y
 ```
 
-- **安装完重启，并执行 `uname -r` 命令查看内核版本来确认新内核是否被启用**
+- **安装完 `重启` ，并执行 `uname -r` 命令查看内核版本来确认新内核是否被启用**
 
 **使用 wgcf 生成 WireGuard 配置文件**
 
