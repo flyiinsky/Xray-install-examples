@@ -342,7 +342,7 @@ systemctl status nginx
 **建立网站文件夹**
 
 ```
-mkdir home/user/www/webpage
+mkdir -p /home/user/www/webpage
 ```
 
 - 自行部署伪装网站
@@ -402,7 +402,7 @@ acme.sh --issue -d mydomain.com --standalone --keylength ec-256 --force
 **建立证书文件夹**
 
 ```
-mkdir home/user/xray_cert
+mkdir -p /home/user/xray_cert
 ```
 
 **安装证书和密钥**
