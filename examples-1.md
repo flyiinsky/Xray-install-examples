@@ -387,6 +387,12 @@ acme.sh --set-default-ca  --server  letsencrypt
 acme.sh --issue -d mydomain.com --webroot /home/user/www/webpage
 ```
 
+申请 `ECC` 证书
+
+```
+acme.sh --issue -d mydomain.com --webroot /home/user/www/webpage --ecc
+```
+
 - **standalone方式 `(standalone方式需要使用80端口，请先停止Nginx)`**
 
 ```
