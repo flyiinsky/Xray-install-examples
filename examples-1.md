@@ -563,9 +563,9 @@ wg-quick up wgcf
 
 ```
 # IPv4 Only VPS
-curl -6 ipinfo.io
+curl -6 https://iplist.cc/api
 # IPv6 Only VPS
-curl -4 ipinfo.io
+curl -4 https://iplist.cc/api
 ```
 
 - **测试完成后关闭相关接口，因为这样配置只是临时性的**
@@ -616,7 +616,7 @@ label 2002::/16   2
 
 - **验证优先级**
 
-执行 `curl ipinfo.io` 命令，显示 IPv4 地址则代表 IPv4 优先，否则为 IPv6 优先。
+执行 `curl https://iplist.cc/api` 命令，显示 IPv4 地址则代表 IPv4 优先，否则为 IPv6 优先。
 
 ---
 
