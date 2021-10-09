@@ -409,14 +409,14 @@ mkdir -p /home/user/xray_cert
 
 ```
 acme.sh --install-cert -d mydomain.com --ecc \
-        --fullchain-file home/user/xray_cert/xray.crt \
-        --key-file home/user/xray_cert/xray.key
+        --fullchain-file /home/user/xray_cert/xray.crt \
+        --key-file /home/user/xray_cert/xray.key
 ```
 
 **赋予`xray.key`可读性权限**
 
 ```
-chmod +r home/user/xray_cert/xray.key
+chmod -R 755 /home/user/xray_cert/xray.key
 ```
 
 ## 4.安装WireGuard
