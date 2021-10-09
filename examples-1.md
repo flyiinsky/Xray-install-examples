@@ -384,13 +384,13 @@ acme.sh --set-default-ca  --server  letsencrypt
 - **http 方式需要在你的网站根目录下放置一个文件, 来验证你的域名所有权,完成验证. 然后就可以生成证书了.**
 
 ```
-acme.sh --issue -d mydomain.com --webroot /home/user/www/webpage
+acme.sh --issue -d mydomain.com --webroot /home/user/www/webpage/
 ```
 
 申请 `ECC` 证书
 
 ```
-acme.sh --issue -d mydomain.com --webroot /home/user/www/webpage --ecc
+acme.sh --issue -d mydomain.com --webroot /home/user/www/webpage/ --ecc
 ```
 
 - **standalone方式 `(standalone方式需要使用80端口，请先停止Nginx)`**
