@@ -588,7 +588,7 @@ systemctl enable wg-quick@wgcf
 **查看 WireGuard 网络接口状态**
 
 ```
-systemctl staus wg-quick@wgcf
+systemctl status wg-quick@wgcf
 ```
 
 **设置设置IPv4 与 IPv6 网络优先级**
