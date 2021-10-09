@@ -358,7 +358,7 @@ apt-get install openssl cron socat curl
 **安装acme.sh**
 
 ```
-curl  https://get.acme.sh
+curl  https://get.acme.sh | sh
 ```
 
 **让 acme.sh 命令生效**
