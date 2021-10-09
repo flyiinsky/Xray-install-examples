@@ -560,9 +560,9 @@ wg-quick up wgcf
 
 ```
 # IPv4 Only VPS
-curl -6 ip.p3terx.com
+curl -6 ipinfo.io
 # IPv6 Only VPS
-curl -4 ip.p3terx.com
+curl -4 ipinfo.io
 ```
 
 - **测试完成后关闭相关接口，因为这样配置只是临时性的**
@@ -613,7 +613,7 @@ label 2002::/16   2
 
 - **验证优先级**
 
-执行 `curl ip.p3terx.com` 命令，显示 IPv4 地址则代表 IPv4 优先，否则为 IPv6 优先。
+执行 `curl ipinfo.io` 命令，显示 IPv4 地址则代表 IPv4 优先，否则为 IPv6 优先。
 
 ---
 
